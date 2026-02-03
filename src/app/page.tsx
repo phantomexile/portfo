@@ -45,23 +45,7 @@ export default async function Home() {
           {/* <GithubContributions /> */}
           <GitHubSnake />
         </div>
-        {/* projects */}
-        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
-          <h2 className="text-3xl font-semibold tracking-tight md:text-5xl opacity-80">
-            {projectHeadLine}
-          </h2>
-          <p className="text-base text-muted-foreground max-w-2xl mb-8">
-            {projectIntro}
-          </p>
-          <ul
-            role="list"
-            className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
-          >
-            {projects.map((project) => (
-              <ProjectCard key={project.name} project={project} titleAs='h3' />
-            ))}
-          </ul>
-        </div>
+        {/* Skills & Tools */}
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
           <h2 className="text-3xl font-semibold tracking-tight md:text-5xl opacity-80 mb-4">
             Skills & Tools
@@ -88,6 +72,23 @@ export default async function Home() {
               </div>
             ))}
           </div>
+        </div>
+        {/* projects */}
+        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
+          <h2 className="text-3xl font-semibold tracking-tight md:text-5xl opacity-80">
+            {projectHeadLine}
+          </h2>
+          <p className="text-base text-muted-foreground max-w-2xl mb-8">
+            {projectIntro}
+          </p>
+          <ul
+            role="list"
+            className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
+          >
+            {projects.map((project) => (
+              <ProjectCard key={project.name} project={project} titleAs='h3' />
+            ))}
+          </ul>
         </div>
 
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
