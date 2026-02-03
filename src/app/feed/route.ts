@@ -8,11 +8,7 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export async function GET(req: Request) {
-  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-
-  if (!siteUrl) {
-    throw Error('Missing NEXT_PUBLIC_SITE_URL environment variable')
-  }
+  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'
 
   let author = {
     name: name,
