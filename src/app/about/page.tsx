@@ -50,8 +50,6 @@ export default function About() {
           </div>
         </div>
         <div className="lg:pl-20">
-          <SocialLinks />
-
         </div>
       </div>
     </Container>

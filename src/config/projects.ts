@@ -29,82 +29,44 @@ export const projects: Array<ProjectItemType> = [
     logo: '/images/icon/veritas.png',
   },
   {
-    name: 'SEO Explore',
+    name: 'Coffee Supply Chain Management System',
     description:
-      'Explore all the best SEO tools in one place.',
-    link: { href: 'seoexplore.com', label: 'SEO Explore' },
+      'A coffee supply chain management system.',
+    link: { href: 'github.com/phantomexile/Coffee-Supply', label: 'Coffee Supply Chain Management System' },
     category: ['Website'],
-    techStack: ['Next.js', 'TailwindCSS', 'Shadcn/UI'],
-    tags: ['SEO']
+    techStack: ['Java', 'JavaScript', 'PostgreSQL', 'Supabase'],
+    tags: ['Website', 'Coffee'],
+    logo: '/images/icon/coffee.jpg',
   },
   {
-    name: 'GitHub Cards',
+    name: 'Veritas RDS Documentation',
     description:
-      'Showcase your GitHub contributions into stunning visual cards.',
-    link: { href: 'github.cards', label: 'GitHub Cards' },
-    category: ['Website'],
-    techStack: ['Next.js', 'TailwindCSS', 'Shadcn/UI'],
-    tags: ['Visual Cards', 'GitHub Contribution Cards']
+      'Showcase of my Veritas RDS documentation.',
+    link: { href: 'https://docs.google.com/document/d/1-Xx5W0gYyxpL7Oa1-CcZfPhyyr3Alfci9dWkKiB57Eg/edit?usp=sharing', label: 'Veritas RDS Documentation' },
+    category: ['Document'],
+    techStack: ['Markdown'],
+    tags: ['Document'],
+    logo: '/images/icon/google-docs.png',
   },
   {
-    name: 'AI Best Tools',
+    name: 'CoffeeChain SRS Documentation',
     description:
-      'Find the best AI tools in AIBest.tools',
-    link: { href: 'aibest.tools', label: 'AI Best Tools' },
-    logo: 'images/icon/aibesttools.png',
-    category: ['Website'],
-    techStack: ['Next.js', 'TailwindCSS', 'Shadcn/UI'],
-    tags: ['AI', 'Tools Directory']
+      'Showcase of my CoffeeChain SRS documentation.',
+    link: { href: 'https://docs.google.com/document/d/1GiepM_LvBMKIOFF7Y0dOpqvKU-i6E9uNq87321Knsf4/edit?usp=sharing', label: 'CoffeeChain SRS Documentation' },
+    category: ['Document'],
+    techStack: ['Markdown'],
+    tags: ['Document'],
+    logo: '/images/icon/google-docs.png',
   },
   {
-    name: 'Best Directories',
+    name: 'CoffeeChain SDS Documentation',
     description:
-      'Your ultimate directory of directories.',
-    link: { href: 'bestdirectories.org', label: 'Best Directories' },
-    logo: '/images/icon/bestdirectories.png',
-    category: ['Website'],
-    techStack: ['Next.js', 'TailwindCSS', 'Shadcn/UI'],
-    tags: ['Directory of Directories']
-  },
-  {
-    name: 'User Growth',
-    description:
-      'Boost Your business growth with UserGrowth.link',
-    link: { href: 'usergrowth.link', label: 'User Growth' },
-    logo: '/images/icon/usergrowth.ico',
-    category: ['Website'],
-    techStack: ['Next.js', 'TailwindCSS', 'Shadcn/UI'],
-    tags: ['User Growth', 'Marketing', 'SEO']
-  },
-  {
-    name: 'Dev Toolset',
-    description:
-      'Open-source database-free tools directory.',
-    link: { href: 'devtoolset.net', label: 'Dev Toolset' },
-    logo: '/images/icon/devtoolset.png',
-    category: ['Website'],
-    techStack: ['Next.js', 'TailwindCSS', 'Shadcn/UI'],
-    tags: ['Open Source', 'Database-Free', 'Tools Directory']
-  },
-  {
-    name: 'Domain Score',
-    description:
-      'Ultimate AI-Powered tool for domain scoring and evaluation',
-    link: { href: 'domainscore.ai', label: 'Domain Score' },
-    logo: '/images/icon/domainscore.png',
-    category: ['Website'],
-    techStack: ['Next.js', 'TailwindCSS', 'Shadcn/UI'],
-    tags: ['Domain', 'AI', 'SEO']
-  },
-  {
-    name: 'MagicBox Tools',
-    description:
-      'Find the best AI tools in MagicBox.tools',
-    link: { href: 'magicbox.tools', label: 'MagicBox Tools' },
-    logo: '/images/icon/magicbox.png',
-    category: ['Website'],
-    techStack: ['Next.js', 'TailwindCSS', 'Shadcn/UI'],
-    tags: ['AI', 'Tools Directory']
+      'Showcase of my CoffeeChain SDS documentation.',
+    link: { href: 'https://docs.google.com/document/d/1l87DAsUbP2qSY-75wPjVOSPro1GJaxhxrbLOyZ9PwgM/edit?usp=sharing', label: 'CoffeeChain SDS Documentation' },
+    category: ['Document'],
+    techStack: ['Markdown'],
+    tags: ['Document'],
+    logo: '/images/icon/google-docs.png',
   },
 ]
 
