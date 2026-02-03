@@ -2,8 +2,11 @@
 export type FriendItemType = {
     name: string
     description: string
-    link: string
-    avatar: string
+    link: { href: string, label: string }
+    logo?: string
 }
 
-export const friendsList: Array<FriendItemType> = []
+export const friends: Array<FriendItemType> = []
+
+export const friendsHeadLine = 'Friends'
+export const friendsIntro = 'Meet my friends and collaborators.'
