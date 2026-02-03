@@ -8,7 +8,7 @@ import { headline, introduction } from '@/config/infoConfig'
 
 import { ProjectCard } from '@/components/project/ProjectCard'
 import { GithubProjectCard } from '@/components/project/GithubProjectCard'
-import { projectHeadLine, projectIntro, projects, githubProjects, techIcons, activityHeadLine, activityIntro } from '@/config/infoConfig'
+import { projectHeadLine, projectIntro, projects, techIcons, activityHeadLine, activityIntro, skillsRaw } from '@/config/infoConfig'
 import GithubContributions from '@/components/home/GithubCalendar'
 import GitHubSnake from '@/components/home/GitHubSnake'
 import { CustomIcon } from '@/components/shared/CustomIcon'
@@ -63,18 +63,21 @@ export default async function Home() {
           </ul>
         </div>
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
-          <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
-            <CustomIcon name='github' size={28} />
-            Open Source
+          <h2 className="text-3xl font-semibold tracking-tight md:text-5xl opacity-80 mb-4">
+            Skills & Tools
           </h2>
-          <ul
-            role="list"
-            className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
-          >
-            {githubProjects.map((project) => (
-              <GithubProjectCard key={project.name} project={project} titleAs='h3' />
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            {skillsRaw.map((section) => (
+              <div key={section.name} className="flex flex-col gap-4 p-6 rounded-2xl border border-muted-foreground/20 shadow-sm bg-muted/5">
+                <h3 className="text-2xl font-semibold">{section.name}</h3>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  {section.items.map((item) => (
+                    <li key={item} className="text-lg">{item}</li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
 
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">

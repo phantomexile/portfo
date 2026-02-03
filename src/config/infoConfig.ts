@@ -4,6 +4,7 @@ export * from './changelog'
 export * from './education'
 export * from './career'
 export * from './activity'
+export * from './skills'
 
 
 // personal info
