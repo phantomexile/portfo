@@ -12,7 +12,7 @@ export const name = 'Tuấn'
 export const headline = 'Business Analyst, Tester, and Software Engineer.'
 export const introduction = 'I’m Tuấn, a Business Analyst based in Hà Nội, Vietnam. I like analyzing, testing, and finding the most optimal solutions to problems.'
 export const email = 'cyrex76@gmail.com'
-export const githubUsername = 'iamcorey'
+export const githubUsername = 'phantomexile'
 
 // about page
 export const aboutMeHeadline = "I'm Tuấn, a Business Analyst based in Hà Nội, Vietnam."
