@@ -22,8 +22,8 @@ import {
   GitMerge,
   Wrench,
   FigmaLogo,
-  Notion,
-  Sitemap
+  NotePencil,
+  FlowArrow
 } from '@phosphor-icons/react'
 
 export function CustomIcon({ name, size = 20 }: { name: string; size?: number }) {
@@ -71,9 +71,9 @@ export function CustomIcon({ name, size = 20 }: { name: string; size?: number })
     case "figma":
       return <FigmaLogo size={size} weight="duotone" />;
     case "notion":
-      return <Notion size={size} weight="duotone" />;
+      return <NotePencil size={size} weight="duotone" />;
     case "sitemap":
-      return <Sitemap size={size} weight="duotone" />;
+      return <FlowArrow size={size} weight="duotone" />;
     default:
       return null
   }
