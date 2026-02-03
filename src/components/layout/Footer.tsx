@@ -5,7 +5,7 @@ import { footerItems } from '@/config/siteConfig'
 import { ThemeToggle } from '@/components/shared/ThemeToggle'
 import { name } from '@/config/infoConfig'
 import SocialLinks from '@/components/home/SocialLinks'
-import VisitData from '@/components/layout/VisitData'
+
 
 
 function NavLink({
@@ -39,13 +39,8 @@ export function Footer() {
               </div>
               <div className='flex flex-col justify-center items-start'>
                 <div className='flex flex-row justify-end items-center gap-2'>
-                  <p className="text-sm text-muted-foreground">
-                    &copy; {new Date().getFullYear()} {name}. All rights reserved.
-                  </p>
-                  <ThemeToggle />
                 </div>
-                <SocialLinks className='mt-0'/>
-                <VisitData />
+                <SocialLinks className='mt-0' />
               </div>
             </div>
           </ContainerInner>

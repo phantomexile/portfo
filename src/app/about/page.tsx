@@ -1,4 +1,6 @@
 import { type Metadata } from 'next'
+import Career from '@/components/home/Career'
+import Education from '@/components/home/Education'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
@@ -42,9 +44,14 @@ export default function About() {
               </p>
             ))}
           </div>
+          <div className="mt-10 grid grid-cols-1 gap-12 lg:grid-cols-2">
+            <Education />
+            <Career />
+          </div>
         </div>
         <div className="lg:pl-20">
           <SocialLinks />
+
         </div>
       </div>
     </Container>

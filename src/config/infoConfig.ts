@@ -7,18 +7,18 @@ export * from './activity'
 
 
 // personal info
-export const name = 'Corey Chiu'
-export const headline = 'Software engineer, Full-Stack web developer, and indie hacker.'
-export const introduction = 'I’m Corey, a software engineer based in Shenzhen, China. I like coding, and building interesting things'
-export const email = 'xxx@gmail.com'
+export const name = 'Tuấn'
+export const headline = 'Business Analyst, Tester, and Software Engineer.'
+export const introduction = 'I’m Tuấn, a Business Analyst based in Hà Nội, Vietnam. I like analyzing, testing, and finding the most optimal solutions to problems.'
+export const email = 'cyrex76@gmail.com'
 export const githubUsername = 'iamcorey'
 
 // about page
-export const aboutMeHeadline = "I'm Corey Chiu, a software engineer based in Shenzhen, China."
+export const aboutMeHeadline = "I'm Tuấn, a Business Analyst based in Hà Nội, Vietnam."
 export const aboutParagraphs = [
-  "I love coding. I learned programming when I in college. I wrote my first program in Java when I was 18.",
-  "I have a lot of hobbies, such as travelling, photography, watching movies, music and so on.",
-  "I'm working as a software develop engineer in Shenzhen, China now. And I'm building a lot of side projects in my spare time."
+  "I love analyzing and testing. I learned analyzing and testing when I in university. I wrote my first program in Python when I was 16.",
+  "I have a lot of hobbies, such as gaming, gym, watching movies, music and so on.",
+  "I'm still studying my major Information System in FPT University. I'm looking for a part-time job as a Business Analyst or Tester in Hà Nội, Vietnam."
 ]
 
 
@@ -40,45 +40,33 @@ export const socialLinks: Array<SocialLinkType> = [
   {
     name: 'X',
     icon: 'x',
-    href: 'https://x.com/realcoreychiu',
-    external: true
-  },
-  {
-    name: 'Bsky',
-    icon: 'bsky',
-    href: 'https://bsky.app/profile/coreychiu.com',
-    external: true
-  },
-  {
-    name: 'Jike',
-    icon: 'pill',
-    href: 'https://okjk.co/P7c1zU',
+    href: 'https://x.com/Nitrozys',
     external: true
   },
   {
     name: 'Github',
     icon: 'github',
-    href: 'https://github.com/iamcorey',
-    external: true
-  },
-  {
-    name: 'Wechat',
-    icon: 'wechat',
-    href: 'https://mp.weixin.qq.com/s/DxnRgqNfgzXIhqj6w_x0dQ',
+    href: 'https://github.com/phantomexile',
     external: true
   },
   {
     name: 'Discord',
     icon: 'discord',
-    href: 'https://discord.gg/xTxRg3Ej',
+    href: 'https://discordpp.com/users/364364825939279883',
     external: true
   },
   {
-    name: 'Ko-fi',
-    icon: 'coffee',
-    href: 'https://ko-fi.com/coreychiu',
+    name: 'Facebook',
+    icon: 'facebook',
+    href: 'https://www.facebook.com/minh.tuan.131255/',
     external: true
-  }
+  },
+  {
+    name: 'Instagram',
+    icon: 'instagram',
+    href: 'https://www.instagram.com/21exile/',
+    external: true
+  },
 ]
 
 // https://simpleicons.org/
@@ -88,23 +76,22 @@ export const techIcons = [
   "supabase",
   "cloudflare",
   "java",
-  "oracle",
+  "python",
   "mysql",
-  "react",
-  "nodedotjs",
-  "nextdotjs",
-  "prisma",
   "postgresql",
-  "nginx",
+  "cursor",
   "vercel",
-  "docker",
   "git",
   "github",
   "visualstudiocode",
-  "androidstudio",
-  "ios",
+  "anaconda",
   "apple",
-  "wechat"
+  "gitlab",
+  "android",
+  "facebook",
+  "instagram",
+  "tiktok",
+  "youtube",
 ];
 
 

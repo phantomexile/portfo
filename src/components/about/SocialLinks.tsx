@@ -22,17 +22,16 @@ export default function SocialLinks() {
             <span className="sr-only">{link.name}</span>
           </Link>
         ))}
-      </div>
-      <div className="mt-8 border-t pt-8 ">
         <Link
           href={`mailto:${email}`}
-          className="group flex flex-row ml-3 justify-start items-center text-md font-medium transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+          aria-label="Email"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-md hover:bg-accent hover:text-accent-foreground"
         >
-          <CustomIcon name="email" size={22} />
-          <span className="ml-4">{email}</span>
+          <CustomIcon name="email" />
         </Link>
       </div>
     </div>
+
 
   )
 }
