@@ -5,6 +5,7 @@ export * from './education'
 export * from './career'
 export * from './activity'
 export * from './skills'
+export * from './certificates'
 
 
 // personal info
