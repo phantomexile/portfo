@@ -90,10 +90,10 @@ export const techIcons = [
   "apple",
   "gitlab",
   "android",
-  "facebook",
-  "instagram",
-  "tiktok",
-  "youtube",
+  "google-docs",
+  "google-sheets",
+  "excel",
+  "notion",
 ];
 
 
