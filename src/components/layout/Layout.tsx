@@ -4,8 +4,8 @@ import { Header } from '@/components/layout/Header'
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <div className="fixed inset-0 flex justify-center sm:px-8">
-        <div className="flex w-full max-w-7xl lg:px-8">
+      <div className="fixed inset-0 flex justify-center sm:px-0">
+        <div className="flex w-full px-0">
           <div className="w-full shadow-xl dark:bg-muted" />
         </div>
       </div>
