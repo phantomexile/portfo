@@ -68,11 +68,17 @@ export default async function Home() {
           </h2>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             {skillsRaw.map((section) => (
-              <div key={section.name} className="flex flex-col gap-4 p-6 rounded-2xl border border-muted-foreground/20 shadow-sm bg-muted/5">
-                <h3 className="text-2xl font-semibold">{section.name}</h3>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+              <div key={section.name} className="flex flex-col gap-4 p-6 rounded-2xl border border-muted-foreground/20 shadow-sm bg-muted/5 hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-3">
+                  <CustomIcon name={section.icon} size={28} className="text-primary" />
+                  <h3 className="text-2xl font-semibold">{section.name}</h3>
+                </div>
+                <ul className="space-y-3">
                   {section.items.map((item) => (
-                    <li key={item} className="text-lg">{item}</li>
+                    <li key={item.name} className="flex items-center gap-3 text-lg text-muted-foreground hover:text-foreground transition-colors">
+                      <CustomIcon name={item.icon} size={20} className="text-primary/70 flex-shrink-0" />
+                      <span>{item.name}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
