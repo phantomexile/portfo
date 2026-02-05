@@ -17,10 +17,6 @@ export const footerItems: Array<NavItemType> = [
     name: 'About',
     href: '/about'
   },
-  {
-    name: 'Projects',
-    href: '/projects'
-  },
 ]
 
 export const navItems: Array<NavItemType> = [
@@ -31,9 +27,5 @@ export const navItems: Array<NavItemType> = [
   {
     name: 'About',
     href: '/about'
-  },
-  {
-    name: 'Projects',
-    href: '/projects'
   },
 ]
