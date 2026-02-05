@@ -8,12 +8,12 @@ import { headline, introduction } from '@/config/infoConfig'
 
 import { ProjectCard } from '@/components/project/ProjectCard'
 import { GithubProjectCard } from '@/components/project/GithubProjectCard'
-import { projectHeadLine, projectIntro, projects, techIcons, certificatesHeadLine, certificatesIntro, skillsRaw } from '@/config/infoConfig'
+import { projectHeadLine, projectIntro, projects, techIcons, certificatesHeadLine, certificatesIntro } from '@/config/infoConfig'
 import GithubContributions from '@/components/home/GithubCalendar'
 import GitHubSnake from '@/components/home/GitHubSnake'
-import { CustomIcon } from '@/components/shared/CustomIcon'
 import IconCloud from "@/components/ui/icon-cloud";
 import { CertificateCarousel } from '@/components/home/CertificateCarousel'
+import { ToolsMarquee } from '@/components/home/ToolsMarquee'
 import Link from 'next/link'
 import { ChevronRightIcon } from 'lucide-react'
 
@@ -40,37 +40,15 @@ export default async function Home() {
             <IconCloud iconSlugs={techIcons} />
           </div>
         </div>
+
         <div className="mt-6 border-t border-zinc-100 py-8 dark:border-zinc-700/40">
           {/* <GithubContributions /> */}
           <GitHubSnake />
         </div>
-        {/* Skills & Tools */}
-        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
-          <h2 className="text-3xl font-semibold tracking-tight md:text-5xl opacity-80 mb-4">
-            Skills & Tools
-          </h2>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-            {skillsRaw.map((section) => (
-              <div key={section.name} className="flex flex-col gap-4 p-6 rounded-2xl border border-muted-foreground/20 shadow-sm bg-muted/5 hover:shadow-md transition-shadow">
-                <div className="flex items-center gap-3">
-                  <div className="text-primary">
-                    <CustomIcon name={section.icon} size={28} />
-                  </div>
-                  <h3 className="text-2xl font-semibold">{section.name}</h3>
-                </div>
-                <ul className="space-y-3">
-                  {section.items.map((item) => (
-                    <li key={item.name} className="flex items-center gap-3 text-lg text-muted-foreground hover:text-foreground transition-colors">
-                      <div className="text-primary/70 flex-shrink-0">
-                        <CustomIcon name={item.icon} size={20} />
-                      </div>
-                      <span>{item.name}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+
+        {/* I WORK WITH: Tools Marquee */}
+        <div className="mt-6 border-t border-zinc-100 dark:border-zinc-700/40">
+          <ToolsMarquee />
         </div>
         {/* projects */}
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
